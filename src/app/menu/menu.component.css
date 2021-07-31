@@ -1,0 +1,30 @@
+div {
+    font-family: 'Yantramanav', sans-serif;
+  }
+
+.background {
+    background-color: rgba(0, 0, 0, 0.89);
+  }
+
+  p {
+    color: #fff;
+	font-size: 13pt;
+	font-weight: normal;
+    text-transform: capitalize;
+  }
+
+a {
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+}
+
+.iconedit {
+width: 20px;
+}
+
+.iconout {
+    width: 17px;
+    }
+
+
