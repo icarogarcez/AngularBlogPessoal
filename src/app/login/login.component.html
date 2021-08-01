@@ -1,23 +1,23 @@
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400&display=swap');
 </style>
 
 <div class="container-fluid">
-    <div class="box">
-        <form>
-            <span class="text-center">Login</span>
-            <div class="input-container">
-                <input type="text" required="" />
-                <label>Usuário</label>
-            </div>
-            <div class="input-container">
-                <input type="password" required="" />
-                <label>Senha</label>
-                <div class="row d-flex justify-content-center">
-                    <a routerLink='' class="btn btn-sm animated-button botaoent col-md-5">Entrar</a>
-                    <a routerLink='/cadastro' class="btn btn-sm animated-button botaocad col-md-6">Cadastrar</a>
-                </div>
-            </div>
-        </form>
-    </div>
+  <div class="box">
+      <form>
+          <span class="text-center">Login</span>
+          <div class="input-container">
+              <input [(ngModel)]= 'usuarioLogin.usuario' name="usuario" id="usuario"type="text"/>
+              <label>Usuário</label>
+          </div>
+          <div class="input-container">
+              <input [(ngModel)]= 'usuarioLogin.senha' name="senha" id="senha"type="password"/>
+              <label>Senha</label>
+              <div class="row d-flex justify-content-center">
+                  <a class="btn btn-sm animated-button botaoent col-md-5" (click)= 'entrar()'>Entrar</a>
+                  <a routerLink='/cadastro' class="btn btn-sm animated-button botaocad col-md-6">Cadastrar</a>
+              </div>
+          </div>
+      </form>
+  </div>
 </div>

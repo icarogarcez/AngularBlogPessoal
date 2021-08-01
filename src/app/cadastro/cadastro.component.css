@@ -4,10 +4,12 @@ div {
 	font-family: 'Yantramanav', sans-serif;
 }
 
+/* Configurações do seletor */
 .selector {
 	border-color: #F2E3BC;
 	border-radius: 0px;
 	margin-top: 25px;
+  margin-bottom: 0px;
 	background-color: transparent;
 	color:#fff;
 }
@@ -17,7 +19,7 @@ option {
 	background: rgba(0, 0, 0, 0.89) !important;
 	text-decoration: none !important;
 	}
-	  
+
 .text-center {
 	color: #fff;
 	text-transform: uppercase;
@@ -26,6 +28,8 @@ option {
 	display: block;
 	text-align: center;
 }
+
+/* Configurações dos inputs */
 
 .box {
 	float: right;
@@ -36,7 +40,7 @@ option {
 	background-color: rgba(0, 0, 0, 0.89);
 	border-radius: 3px;
 	padding: 70px 70px;
-	padding-bottom: 20px;
+	padding-bottom: 4px;
 }
 
 .input-container {
@@ -51,7 +55,7 @@ option {
 	font-size: 16px;
 	color: #fff;
 	pointer-events: none;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out !important;
 }
 
 .input-container input {
@@ -70,133 +74,106 @@ option {
 	border-bottom: 1px solid #F2E3BC;
 }
 
-.input-container input:focus~label, .input-container input:valid~label {
-	top: -12px;
-	font-size: 12px;
+.input-container input:focus ~ label,
+.input-container input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+
 }
 
-/* Configurações padrão dos botões */
+/* Configurações padrão - botões */
 
 a.animated-button:link, a.animated-button:visited {
-	position: relative;
-	display: block;
-	margin: 30px auto 0;
-	padding: 14px 15px;
-	color: #fff;
-	font-size: 15px;
-	font-weight: normal;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	overflow: hidden;
-	letter-spacing: .08em;
-	border-radius: 0;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
-}
-
-a.animated-button:link:after, a.animated-button:visited:after {
-	content: "";
-	position: absolute;
-	height: 0%;
-	left: 50%;
-	top: 50%;
-	width: 150%;
-	z-index: -1;
-	-webkit-transition: all 0.75s ease 0s;
-	-moz-transition: all 0.75s ease 0s;
-	-o-transition: all 0.75s ease 0s;
-	transition: all 0.75s ease 0s;
-}
-
-a.animated-button:link:hover, a.animated-button:visited:hover {
-	color: #FFF;
-	text-shadow: none;
-}
-
-a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
-	height: 450%;
-}
-
-a.animated-button:link, a.animated-button:visited {
-	position: relative;
-	display: block;
-	margin: 30px auto 0;
-	padding: 13px 14px;
-	color: #fff;
-	font-size: 16px;
-	border-radius: 0;
-	font-weight: normal;
-	text-align: center;
-	text-decoration: none;
-	text-transform: lowercase;
-	overflow: hidden;
-	letter-spacing: .08em;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  overflow: hidden;
 }
 
 /* Botão Cadastrar */
 
 a.animated-button.botaocad {
-	border: 1px solid #C19875;
-	color: #FFF;
+  border: 1px solid #C19875;
+  color: #FFF;
+  text-transform: lowercase;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 0;
+  letter-spacing: .08em;
+  margin: 30px auto 0;
+  padding: 13px 14px;
 }
 
 a.animated-button.botaocad:after {
-	border: 3px solid #C19875;
-	opacity: 0;
-	-moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
-	-ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
-	-webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
-	transform: translateY(-50%) translateX(-50%) rotate(90deg);
+  border: 3px solid #C19875;
+  opacity: 0;
+  -moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+  -ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+  transform: translateY(-50%) translateX(-50%) rotate(90deg);
+  content: "";
+  position: absolute;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 150%;
+  z-index: -1;
+  -webkit-transition: all 0.75s ease 0s;
+  -moz-transition: all 0.75s ease 0s;
+  -o-transition: all 0.75s ease 0s;
+  transition: all 0.75s ease 0s;
 }
 
 a.animated-button.botaocad:hover:after {
-	height: 600% !important;
-	opacity: 1;
-	color: #FFF;
+  height: 600%;
+  opacity: 1;
+  color: #FFF;
 }
 
 /* Botão Cancelar */
 
 a.animated-button.botaoent {
-	color: #fff;
-	cursor: pointer;
-	display: block;
-	position: relative;
-	border: 1px solid #C19875;
-	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  color: #fff;
+  display: block;
+  text-transform: lowercase;
+  position: relative;
+  border: 1px solid #C19875;
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  margin: 30px auto 0;
+  padding: 13px 14px;
+  border-radius: 0;
+  font-weight: normal;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  letter-spacing: .08em;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
 }
 
 a.animated-button.botaoent:hover {
-	color: #000 !important;
-	background-color: transparent;
-	text-shadow: ntwo;
+  color: #000;
+  background-color: transparent;
 }
 
 a.animated-button.botaoent:hover:before {
-	top: 0%;
-	bottom: auto;
-	height: 100%;
+  top: 0%;
+  bottom: auto;
+  height: 100% !important;
 }
 
 a.animated-button.botaoent:before {
-	display: block;
-	position: absolute;
-	left: 0px;
-	bottom: 0px;
-	height: 0px;
-	width: 100%;
-	z-index: -1;
-	content: '';
-	color: #000 !important;
-	background: #C19875;
-	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  display: block;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  height: 0px;
+  width: 100%;
+  z-index: -1;
+  content: '';
+  color: #000;
+  background: #C19875;
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  letter-spacing: .08em;
 }

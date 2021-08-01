@@ -7,37 +7,36 @@
     <form>
       <span class="text-center">Cadastro</span>
       <div class="input-container">
-        <input type="text" required="" />
+        <input [(ngModel)]= 'usuario.nome' type="text" name="nome" id="nome"/>
         <label>Nome</label>
       </div>
       <div class="input-container">
-        <input type="text" required="" />
+        <input [(ngModel)]= 'usuario.usuario' type="text" name="usuario" id="usuario"/>
         <label>Usuário</label>
       </div>
       <div class="input-container">
-        <input type="text" required="" />
+        <input [(ngModel)]= 'usuario.foto' type="text" name="foto" id="foto"/>
         <label>Link da foto</label>
       </div>
       <div class="input-container">
-        <input type="password" required="" />
+        <input (input)='confirmarSenha($event)' type="password" name="senha" id="senha"/>
         <label>Senha</label>
       </div>
       <div class="input-container">
-        <input type="password" required="" />
+        <input [(ngModel)]= 'usuario.senha' type="password" name="confirmeSenha" id="confirmeSenha"/>
         <label>Confirmar senha</label>
         <div>
-          <select class="form-select selector" aria-label="Default select example">
+        </div>
+          <select class="form-select form-control selector" name="tipo" id="tipo" (change)= 'tipoUsuario($event)'>
             <option selected>Tipo de usuário</option>
-            <option value="1">Normal</option>
-            <option value="2">Administrador</option>
+            <option value="normal">Normal</option>
+            <option value="adm">Administrador</option>
           </select>
         </div>
         <div class="row d-flex justify-content-center">
-          <a routerLink= '' class="btn btn-sm animated-button botaoent col-md-4">Cadastrar</a>
-          <a routerLink= '/login' class="btn btn-sm animated-button botaocad col-md-6">Cancelar</a>
+          <a type= "submit" class="btn btn-sm animated-button botaoent col-md-5 mt-0 mb-5 me-3" (click)= 'cadastrar()'>Cadastrar</a>
+          <a type= "submit" routerLink= '/login' class="btn btn-sm animated-button botaocad col-md-5 mt-0 mb-5">Cancelar</a>
         </div>
-
-      </div>
     </form>
   </div>
 </div>
