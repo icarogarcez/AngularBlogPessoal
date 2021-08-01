@@ -52,10 +52,7 @@ option {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	font-size: 16px;
 	color: #fff;
-	pointer-events: none;
-	transition: all 0.5s ease-in-out !important;
 }
 
 .input-container input {
@@ -64,7 +61,6 @@ option {
 	background: transparent;
 	width: 300px;
 	padding: 8px 0px 5px 0px;
-	font-size: 16px;
 	color: #fff;
 }
 
@@ -76,8 +72,8 @@ option {
 
 .input-container input:focus ~ label,
 .input-container input:valid ~ label{
-	top:-12px;
-	font-size:12px;
+	top:-18px;
+	font-size:16px;
 
 }
 

@@ -7,23 +7,23 @@
     <form>
       <span class="text-center">Cadastro</span>
       <div class="input-container">
-        <input [(ngModel)]= 'usuario.nome' type="text" name="nome" id="nome"/>
+        <input [(ngModel)]= 'usuario.nome' type="text" name="nome" id="nome" placeholder= "Digite seu nome ou apelido"/>
         <label>Nome</label>
       </div>
       <div class="input-container">
-        <input [(ngModel)]= 'usuario.usuario' type="text" name="usuario" id="usuario"/>
+        <input [(ngModel)]= 'usuario.usuario' type="text" name="usuario" id="usuario" placeholder= "Digite um email válido"/>
         <label>Usuário</label>
       </div>
       <div class="input-container">
-        <input [(ngModel)]= 'usuario.foto' type="text" name="foto" id="foto"/>
-        <label>Link da foto</label>
+        <input [(ngModel)]= 'usuario.foto' type="text" name="foto" id="foto" placeholder= "O link para a foto de perfil é opcional"/>
+        <label>Foto</label>
       </div>
       <div class="input-container">
-        <input (input)='confirmarSenha($event)' type="password" name="senha" id="senha"/>
+        <input (input)='confirmarSenha($event)' type="password" name="senha" id="senha" placeholder= "Sua senha deve ser maior que 5 caracteres"/>
         <label>Senha</label>
       </div>
       <div class="input-container">
-        <input [(ngModel)]= 'usuario.senha' type="password" name="confirmeSenha" id="confirmeSenha"/>
+        <input [(ngModel)]= 'usuario.senha' type="password" name="confirmeSenha" id="confirmeSenha" placeholder= "A senha deve ser a mesma que a anterior"/>
         <label>Confirmar senha</label>
         <div>
         </div>
