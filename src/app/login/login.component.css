@@ -130,7 +130,7 @@ a.animated-button:link, a.animated-button:visited {
 /* Botão Cadastrar */
 
 a.animated-button.botaocad {
-	border: 2px solid #C19875;
+	border: 1px solid #C19875;
 	color: #FFF;
 }
 
@@ -156,7 +156,7 @@ a.animated-button.botaoent {
 	cursor: pointer;
 	display: block;
 	position: relative;
-	border: 2px solid #C19875;
+	border: 1px solid #C19875;
 	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
