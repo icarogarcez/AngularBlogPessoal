@@ -2,7 +2,13 @@
   @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400&display=swap');
 </style>
 
-<div class="container-fluid">
+<div class="container-fluid p-0 mb-0 mt-0">
+  <img src= "../../assets/imagens/kyd9.jpg" class= "fundo">
+<div class="row d-flex">
+  <div class= "coluna">
+    <img src= "../../assets/imagens/coluna.png">
+  </div>
+  <div class="container-fluid col-md-4">
   <div class="box">
     <form>
       <span class="text-center">Cadastro</span>
@@ -35,8 +41,9 @@
         </div>
         <div class="row d-flex justify-content-center">
           <a type= "submit" class="btn btn-sm animated-button botaoent col-md-5 mt-0 mb-5 me-3" (click)= 'cadastrar()'>Cadastrar</a>
-          <a type= "submit" routerLink= '/login' class="btn btn-sm animated-button botaocad col-md-5 mt-0 mb-5">Cancelar</a>
+          <a type= "submit" routerLink= '/login' class="btn btn-sm animated-button botaocad col-md-5 mt-0 mb-5 ms-4">Cancelar</a>
         </div>
     </form>
+  </div>
   </div>
 </div>

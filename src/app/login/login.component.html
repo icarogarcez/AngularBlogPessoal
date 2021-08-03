@@ -2,9 +2,14 @@
   @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400&display=swap');
 </style>
 
-<div class="container-fluid">
-  <div class="box">
-      <form>
+<div class="container-fluid p-0 mb-0 mt-0">
+  <img src= "../../assets/imagens/kyd8.jpg" class= "fundo">
+<div class="row d-flex">
+  <div class= "coluna">
+    <img src= "../../assets/imagens/coluna.png">
+  </div>
+  <div class="container-fluid col-md-4">
+      <form class= "box">
           <span class="text-center">Login</span>
           <div class="input-container">
               <input [(ngModel)]= 'usuarioLogin.usuario' name="usuario" id="usuario"type="text"/>
@@ -16,8 +21,9 @@
               <div class="row d-flex justify-content-center">
                   <a class="btn btn-sm animated-button botaoent col-md-5" (click)= 'entrar()'>Entrar</a>
                   <a routerLink='/cadastro' class="btn btn-sm animated-button botaocad col-md-6">Cadastrar</a>
-              </div>
+                  </div>
           </div>
       </form>
+    </div>
   </div>
-</div>
+    </div>

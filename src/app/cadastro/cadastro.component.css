@@ -1,3 +1,15 @@
+.coluna {
+  position:fixed;
+  width: 100%;
+  height: 100%;
+  }
+
+  .fundo {
+    width: 100%;
+    height: 100%;
+    position:absolute;
+  }
+
 /* Formulário de Input-Login */
 
 div {
@@ -6,7 +18,7 @@ div {
 
 /* Configurações do seletor */
 .selector {
-	border-color: #F2E3BC;
+	border-color: #402421;
 	border-radius: 0px;
 	margin-top: 25px;
   margin-bottom: 0px;
@@ -32,15 +44,16 @@ option {
 /* Configurações dos inputs */
 
 .box {
-	float: right;
-	display: flex;
+  position: fixed;
 	left: 50%;
-	top: 50%;
+  width: 35%;
 	transform: translate(-25%, 2%);
-	background-color: rgba(0, 0, 0, 0.89);
+	background-color: rgba(0, 0, 0, 0.83);
 	border-radius: 3px;
 	padding: 70px 70px;
 	padding-bottom: 4px;
+  margin-left: 210px;
+  margin-top: 0px;
 }
 
 .input-container {
@@ -57,9 +70,9 @@ option {
 
 .input-container input {
 	border: 0;
-	border-bottom: 1px solid #F2E3BC;
+	border-bottom: 1px solid #402421;
 	background: transparent;
-	width: 300px;
+	width: 337px;
 	padding: 8px 0px 5px 0px;
 	color: #fff;
 }
@@ -67,7 +80,7 @@ option {
 .input-container input:focus {
 	border: none;
 	outline: none;
-	border-bottom: 1px solid #F2E3BC;
+	border-bottom: 1px solid #402421;
 }
 
 .input-container input:focus ~ label,
@@ -89,7 +102,7 @@ a.animated-button:link, a.animated-button:visited {
 /* Botão Cadastrar */
 
 a.animated-button.botaocad {
-  border: 1px solid #C19875;
+  border: 1px solid #595443;
   color: #FFF;
   text-transform: lowercase;
   font-size: 16px;
@@ -97,11 +110,11 @@ a.animated-button.botaocad {
   border-radius: 0;
   letter-spacing: .08em;
   margin: 30px auto 0;
-  padding: 13px 14px;
+  padding: 13px 15px;
 }
 
 a.animated-button.botaocad:after {
-  border: 3px solid #C19875;
+  border: 3px solid #595443;
   opacity: 0;
   -moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
   -ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
@@ -133,10 +146,10 @@ a.animated-button.botaoent {
   display: block;
   text-transform: lowercase;
   position: relative;
-  border: 1px solid #C19875;
+  border: 1px solid #595443;
   transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
   margin: 30px auto 0;
-  padding: 13px 14px;
+  padding: 13px 15px;
   border-radius: 0;
   font-weight: normal;
   font-size: 16px;
@@ -169,7 +182,7 @@ a.animated-button.botaoent:before {
   z-index: -1;
   content: '';
   color: #000;
-  background: #C19875;
+  background: #595443;
   transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
   letter-spacing: .08em;
 }
