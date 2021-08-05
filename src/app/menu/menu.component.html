@@ -11,11 +11,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto d-flex align-items-center">
                 <li class="nav-item">
-                    <img src="assets/imagens/icaroicon.png" alt="Sua foto" width="50px" height="50px"
+                    <img src="{{foto}}" alt="Foto do Usuário" width="50px" height="50px"
                         class="img-fluid rounded-circle ms-4 p-1"> <!-- Imagem da pessoa -->
                 </li>
                 <li class="nav-item ms-2">
-                    <p class="m-0">Ícaro Garcez</p>
+                    <p class="m-0">{{nome}}</p>
                 </li>
                 <li class="nav-item ms-2">
                     <a href="#">
@@ -27,12 +27,12 @@
             </ul>
             <ul class="navbar-nav ms-auto d-flex align-items-center">
                 <li class="nav-item me-2">
-                    <a class="m-0">Sair</a>
+                    <a (click)='sair()' class="m-0">Sair</a>
                 </li>
                 <li class="nav-item me-4">
                     <a href="#">
                         <p class="m-0">
-                            <img src="assets/imagens/out.svg" alt="Sair" class="iconout">
+                            <img (click)='sair()' src="assets/imagens/out.svg" alt="Sair" class="iconout">
                         </p>
                     </a>
                 </li>
