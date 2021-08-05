@@ -1,1 +1,79 @@
-<p>inicio works!</p>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@300;400&display=swap');
+</style>
+
+<div class="container-fluid">
+  <div class="row background d-flex">
+    <div class="col-md-6">
+<div class="row d-flex justify-content-center">
+  <div class="col-md-7 m-3">
+<h1>
+  Abublebuble
+</h1>
+<h5>
+  Eu não aguento mais Taylor Swift faça alguma coisa
+</h5>
+  </div>
+</div>
+<div class="row d-flex justify-content-center">
+  <div class="col-md-7 m-3">
+    <button class="botao1 me-2" data-bs-toggle="modal" data-bs-target="#novaPostagem">Nova Postagem</button>
+    <a href= "#postagens">
+      <button class="botao2">Ver Postagens</button>
+    </a>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container mb-5 mt-5 bg-dark" id="postagens">
+  <nav>
+    <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-todasPostagens-tab" data-bs-toggle="tab" data-bs-target="#todasPostagens"
+      type="button" role="tab" aria-controls="nav-todasPostagens" aria-selected="true">Todas as postagens</button>
+      <button class="nav-link" id="nav-minhasPostagens-tab" data-bs-toggle="tab" data-bs-target="#minhasPostagens"
+      type="button" role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Minhas postagens</button>
+      <button class="nav-link" id="nav-porTema-tab" data-bs-toggle="tab" data-bs-target="#porTema"
+      type="button" role="tab" aria-controls="nav-porTema" aria-selected="false">Postagens por tema</button>
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="nav-todasPostagens-tab">
+      Todas as postagens
+    </div>
+    <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
+      Minhas postagens
+    </div>
+    <div class="tab-pane fade" id="porTema" role="tabpanel" aria-labelledby="nav-porTema-tab">
+      Postagens por tema
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="novaPostagem" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content caixapost">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Nova postagem</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <div class="form-group">
+        <label for= "titulo">Titulo</label>
+        <input type= "text" class= "form-control" id= "titulo" placeholder="Digite um título">
+      </div>
+      <div class="form-group">
+        <label for= "texto">Texto</label>
+        <textarea class= "form-control" name="texto" id= "texto" rows= "3"></textarea >
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="botao1" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="botao2">Publicar</button>
+      </div>
+    </div>
+  </div>
+</div>
