@@ -1,4 +1,4 @@
-div {
+* {
   font-family: 'Yantramanav', sans-serif;
   color: white;
 }
@@ -13,8 +13,13 @@ h5 {
 
 .background {
   background-image: url(../../assets/imagens/iniciofundo.png);
-  width: 100%;
-  height: 365px;
+  width: 1349px;
+  height: 540px;
+}
+
+.embaixo {
+  background-color: #402421;
+  display:grid;
 }
 
 /* Botões */
@@ -49,10 +54,125 @@ h5 {
   padding: 10px;
 }
 
+.botao3 {
+  width: 150px;
+  height: 45px;
+  background: #59554d;
+  border-style:solid;
+  color: #fff;
+  border-color: #59554d;
+  text-transform: lowercase;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 0;
+  letter-spacing: .08em;
+  padding: 10px;
+}
+
+.botao4 {
+  width: 150px;
+  height: 45px;
+  background: transparent;
+  border-style:solid;
+  color: #fff;
+  border-color: #59554d;
+  text-transform: lowercase;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 0;
+  letter-spacing: .08em;
+  padding: 10px;
+}
+
 .botao2:hover {
   background-color: #402421;
 }
 
+.botao4:hover {
+  background-color: #59554d;
+}
+
 .caixapost {
   border-radius: 0;
+}
+
+/* Modal */
+
+.box {
+	background-color: black;
+}
+
+.modal-title {
+  text-transform: uppercase;
+	font-size: 23px;
+}
+
+.form-group {
+	position: relative;
+	margin-bottom: 25px;
+}
+
+.form-group label {
+	color: #fff;
+  letter-spacing: .08em;
+  margin-bottom: 5px;
+  font-weight: lighter;
+}
+
+.form-group input {
+	border: 1px solid #59554d;
+	background: transparent;
+	padding: 8px 0px 5px 0px;
+	color: #fff;
+  border-radius: 0%;
+  font-weight: lighter;
+  letter-spacing: .04em;
+}
+
+.form-group textarea {
+	border: 1px solid #59554d;
+	background: transparent;
+	padding: 8px 0px 5px 0px;
+	color: #fff;
+  border-radius: 0%;
+  font-weight: lighter;
+  letter-spacing: .04em;
+}
+
+/* Configurações do seletor */
+.selector {
+	border-color: #59554d;
+	border-radius: 0px;
+  margin-bottom: 0px;
+	background-color: transparent;
+	color:#fff;
+  font-weight: lighter;
+  letter-spacing: .08em;
+}
+
+option {
+	color: #fff !important;
+	background: black !important;
+	text-decoration: none !important;
+	}
+
+  .label {
+    font-weight: lighter;
+    letter-spacing: .04em;
+    margin-bottom: 5px;
+  }
+
+  a:hover {
+color: #59554d;
+  }
+
+/* Nav-citações */
+
+.nav-link {
+border-radius: 0;
+margin-left: 5px;
+}
+
+.nav-link:hover {
+color: #735c40;
 }

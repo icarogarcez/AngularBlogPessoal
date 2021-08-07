@@ -4,22 +4,22 @@
 
 <div class="container-fluid">
   <div class="row background d-flex">
-    <div class="col-md-6">
+    <div class="col-md-6 mt-5">
 <div class="row d-flex justify-content-center">
   <div class="col-md-7 m-3">
 <h1>
-  Abublebuble
+  Boas vindas,
 </h1>
 <h5>
-  Eu não aguento mais Taylor Swift faça alguma coisa
+  Sinta-se livre para expressar as suas novas visões
 </h5>
   </div>
 </div>
 <div class="row d-flex justify-content-center">
   <div class="col-md-7 m-3">
-    <button class="botao1 me-2" data-bs-toggle="modal" data-bs-target="#novaPostagem">Nova Postagem</button>
+    <button class="botao1 me-2" data-bs-toggle="modal" data-bs-target="#novaPostagem">Nova citação</button>
     <a href= "#postagens">
-      <button class="botao2">Ver Postagens</button>
+      <button class="botao2">Ver citações</button>
     </a>
   </div>
 </div>
@@ -27,27 +27,27 @@
   </div>
 </div>
 
-
-<div class="container mb-5 mt-5 bg-dark" id="postagens">
+<div class="container-fluid embaixo">
+<div class="container mb-5 mt-5" id="postagens">
   <nav>
     <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
       <button class="nav-link active" id="nav-todasPostagens-tab" data-bs-toggle="tab" data-bs-target="#todasPostagens"
-      type="button" role="tab" aria-controls="nav-todasPostagens" aria-selected="true">Todas as postagens</button>
+      type="button" role="tab" aria-controls="nav-todasPostagens" aria-selected="true">Todas as citações</button>
       <button class="nav-link" id="nav-minhasPostagens-tab" data-bs-toggle="tab" data-bs-target="#minhasPostagens"
-      type="button" role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Minhas postagens</button>
+      type="button" role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Minhas citações</button>
       <button class="nav-link" id="nav-porTema-tab" data-bs-toggle="tab" data-bs-target="#porTema"
-      type="button" role="tab" aria-controls="nav-porTema" aria-selected="false">Postagens por tema</button>
+      type="button" role="tab" aria-controls="nav-porTema" aria-selected="false">Citações por tema</button>
     </div>
   </nav>
   <div class="tab-content" id="nav-tabContent">
     <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="nav-todasPostagens-tab">
-      Todas as postagens
+      Todas as citações
     </div>
     <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">
-      Minhas postagens
+      Minhas citações
     </div>
     <div class="tab-pane fade" id="porTema" role="tabpanel" aria-labelledby="nav-porTema-tab">
-      Postagens por tema
+      Citações por tema
     </div>
   </div>
 </div>
@@ -55,25 +55,38 @@
 <!-- Modal -->
 <div class="modal fade" id="novaPostagem" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content caixapost">
+    <div class="modal-content caixapost box">
       <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Nova postagem</h5>
+        <h5 class="modal-title" id="staticBackdropLabel">Nova citação</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
       <div class="form-group">
-        <label for= "titulo">Titulo</label>
-        <input type= "text" class= "form-control" id= "titulo" placeholder="Digite um título">
+        <label for= "titulo">título</label>
+        <input type= "text" class= "form-control" id= "titulo">
       </div>
       <div class="form-group">
-        <label for= "texto">Texto</label>
+        <label for= "texto">texto</label>
         <textarea class= "form-control" name="texto" id= "texto" rows= "3"></textarea >
+      </div>
+      <div>
+        <label for= "tema" class= "label">Escolha um tema ou <a href= "">cadastre um novo</a></label>
+        <select class="form-select form-control selector" name="tema" id="tema">
+          <option selected></option>
+          <option value="livro">Pessoal</option>
+          <option value="livro">Livros</option>
+            <option value="poema">Poemas</option>
+            <option value="filme">Filmes</option>
+          <option value="serie">Séries</option>
+          <option value="musica">Músicas</option>
+        </select>
       </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="botao1" data-bs-dismiss="modal">Cancelar</button>
-        <button type="button" class="botao2">Publicar</button>
+        <button type="button" class="botao3" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="botao4">Publicar</button>
       </div>
     </div>
   </div>
+</div>
 </div>

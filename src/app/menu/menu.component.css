@@ -3,7 +3,8 @@ div {
 }
 
 .background {
-  background-color: rgba(0, 0, 0, 0.89);
+  background-color: black;
+  height: 60px;
 }
 
 p {
