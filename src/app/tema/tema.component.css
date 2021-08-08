@@ -1,0 +1,69 @@
+* {
+  font-family: 'Yantramanav', sans-serif;
+  color: white;
+}
+
+h1 {
+  font-size: 54pt;
+}
+
+h5 {
+  font-size: 20pt;
+}
+
+.background {
+  background-image: url(../../assets/imagens/temasfundo.png);
+  width: 1349px;
+  height: 440px;
+}
+
+.background2 {
+  display: grid;
+  background-image: url(../../assets/imagens/grain.gif);
+}
+
+.botao {
+  width: 150px;
+  height: 45px;
+  background: rgba(0, 0, 0, 0.555);
+  border-style:solid;
+  color: #fff;
+  border-color: #394033;
+  text-transform: lowercase;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 0;
+  letter-spacing: .08em;
+  padding: 10px;
+}
+
+.botao:hover {
+  background-color: #394033;
+}
+
+.form-group {
+	position: relative;
+	margin-bottom: 25px;
+}
+
+.form-group label {
+	color: #fff;
+  letter-spacing: .08em;
+  margin-bottom: 5px;
+  font-weight: lighter;
+}
+
+.form-group input {
+	border: 2px solid #394033;
+	background: #394033;
+	padding: 8px 0px 5px 0px;
+	color: #fff;
+  border-radius: 0%;
+  font-weight: lighter;
+  letter-spacing: .04em;
+}
+
+input::placeholder {
+  color:#fff;
+  text-indent: 10px;
+}

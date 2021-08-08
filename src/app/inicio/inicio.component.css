@@ -120,7 +120,7 @@ h5 {
 }
 
 .form-group input {
-	border: 1px solid #59554d;
+	border: 2px solid #59554d;
 	background: transparent;
 	padding: 8px 0px 5px 0px;
 	color: #fff;
@@ -130,7 +130,7 @@ h5 {
 }
 
 .form-group textarea {
-	border: 1px solid #59554d;
+	border: 2px solid #59554d;
 	background: transparent;
 	padding: 8px 0px 5px 0px;
 	color: #fff;
