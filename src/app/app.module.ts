@@ -12,6 +12,8 @@ import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { TemaComponent } from './tema/tema.component';
+import { EditarTemaComponent } from './edit/editar-tema/editar-tema.component';
+import { ApagarTemaComponent } from './delete/apagar-tema/apagar-tema.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { TemaComponent } from './tema/tema.component';
     CadastroComponent,
     InicioComponent,
     TemaComponent,
+    EditarTemaComponent,
+    ApagarTemaComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [
